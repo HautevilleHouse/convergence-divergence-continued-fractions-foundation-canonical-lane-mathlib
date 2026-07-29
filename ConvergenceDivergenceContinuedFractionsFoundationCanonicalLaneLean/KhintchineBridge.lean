@@ -1,0 +1,17 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.ConvergenceDivergenceContinuedFractionsFoundationCanonicalLaneLean.ContinuedFractionObject
+import HautevilleHouse.ConvergenceDivergenceContinuedFractionsFoundationCanonicalLaneLean.ConvergenceCriteria
+import HautevilleHouse.ConvergenceDivergenceContinuedFractionsFoundationCanonicalLaneLean.DivergenceCriteria
+
+namespace HautevilleHouse
+namespace ConvergenceDivergenceContinuedFractionsFoundationCanonicalLaneLean
+
+def bridgeClosed (A : AdmittedContinuedFraction) : Prop :=
+  CFWitnessClosed A
+
+theorem bridge_from_admissible_class (A : AdmittedContinuedFraction) :
+    bridgeClosed A := by
+  exact A.conclusion
+
+end ConvergenceDivergenceContinuedFractionsFoundationCanonicalLaneLean
+end HautevilleHouse
